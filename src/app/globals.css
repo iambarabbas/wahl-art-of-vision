@@ -1,0 +1,310 @@
+@import "tailwindcss";
+
+/* ============================================================
+   THEME — raw palette + scales exposed as first-class Tailwind
+   tokens (bg-ink-900, text-hue-magenta, text-lg, rounded-lg, ...).
+   Ported 1:1 from the original design-system tokens so utility
+   classes resolve to the exact same values as the source site.
+   ============================================================ */
+@theme {
+  /* Signature spark (the anarchy-A red) */
+  --color-spark:        #FF2D1A;
+  --color-spark-deep:   #D11402;
+  --color-spark-soft:   #FF6453;
+
+  /* The spectrum */
+  --color-hue-magenta:  #FF2E8B;
+  --color-hue-pink:     #FF6BB0;
+  --color-hue-violet:   #7C3AED;
+  --color-hue-indigo:   #4733E0;
+  --color-hue-blue:     #2C6BFF;
+  --color-hue-cyan:     #14C5E8;
+  --color-hue-teal:     #11C7A8;
+  --color-hue-green:    #18B86A;
+  --color-hue-lime:     #B6E021;
+  --color-hue-yellow:   #FFC400;
+  --color-hue-amber:    #FF9E1B;
+  --color-hue-orange:   #FF6B2C;
+
+  /* Ink / stage neutrals */
+  --color-ink-900: #0B0B12;
+  --color-ink-850: #101019;
+  --color-ink-800: #15151F;
+  --color-ink-700: #1D1D2A;
+  --color-ink-600: #292936;
+  --color-ink-500: #3A3A4A;
+  --color-ink-400: #585869;
+  --color-ink-300: #8A889C;
+  --color-ink-200: #B9B7C9;
+  --color-ink-100: #E3E1EE;
+  --color-ink-050: #F1F0F7;
+
+  /* Paper / warm canvas */
+  --color-paper:   #FAF7F1;
+  --color-paper-2: #F1EDE4;
+  --color-paper-3: #E6E1D5;
+
+  /* Fonts (wired to next/font variables in layout.tsx) */
+  --font-display: var(--font-bricolage), "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body:    var(--font-jakarta), system-ui, -apple-system, sans-serif;
+  --font-mono:    var(--font-space-mono), ui-monospace, "SFMono-Regular", monospace;
+
+  /* Fluid type scale (overrides Tailwind's default --text-* scale) */
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-md:   1.125rem;
+  --text-lg:   clamp(1.25rem, 0.5vw + 1.1rem, 1.5rem);
+  --text-xl:   clamp(1.5rem, 1vw + 1.25rem, 2rem);
+  --text-2xl:  clamp(2rem, 2vw + 1.4rem, 3rem);
+  --text-3xl:  clamp(2.6rem, 3.5vw + 1.4rem, 4.5rem);
+  --text-4xl:  clamp(3.4rem, 6vw + 1rem, 6.5rem);
+  --text-5xl:  clamp(4rem, 9vw + 0.5rem, 9rem);
+
+  /* Spacing (named additions to Tailwind's base scale; irregular by design) */
+  --spacing-5:  1.5rem;
+  --spacing-6:  2rem;
+  --spacing-7:  3rem;
+  --spacing-8:  4rem;
+  --spacing-9:  6rem;
+  --spacing-10: 8rem;
+
+  /* Radii */
+  --radius-xs:   4px;
+  --radius-sm:   8px;
+  --radius-md:   12px;
+  --radius-lg:   18px;
+  --radius-xl:   28px;
+  --radius-pill: 999px;
+
+  /* Container widths (custom breakpoints used as max-width utilities) */
+  --container-sm: 640px;
+  --container-md: 880px;
+  --container-lg: 1140px;
+  --container-xl: 1320px;
+}
+
+/* ============================================================
+   SEMANTIC tokens — reactive aliases (flip under [data-theme="paper"]),
+   kept as plain custom properties rather than @theme entries since
+   their value depends on runtime scope, not a static build-time choice.
+   Used via arbitrary-value classes, e.g. bg-[var(--bg-canvas)].
+   ============================================================ */
+:root {
+  --bg-canvas:       var(--color-ink-900);
+  --bg-canvas-stage: radial-gradient(120% 90% at 50% 0%, #1B1430 0%, var(--color-ink-900) 60%);
+  --surface-1:       var(--color-ink-800);
+  --surface-2:       var(--color-ink-700);
+  --surface-3:       var(--color-ink-600);
+  --surface-inset:   var(--color-ink-850);
+
+  --text-primary:    #F6F4FB;
+  --text-secondary:  var(--color-ink-200);
+  --text-muted:      var(--color-ink-300);
+  --text-inverse:    var(--color-ink-900);
+  --text-on-color:   #FFFFFF;
+
+  --border-subtle:   rgba(255,255,255,0.10);
+  --border-strong:   rgba(255,255,255,0.22);
+  --border-spark:    var(--color-spark);
+
+  --accent:          var(--color-spark);
+  --accent-2:        var(--color-hue-blue);
+  --accent-3:        var(--color-hue-yellow);
+
+  --link:            var(--color-hue-cyan);
+  --link-hover:      var(--color-hue-yellow);
+  --focus-ring:      var(--color-hue-cyan);
+
+  --success: var(--color-hue-green);
+  --warning: var(--color-hue-amber);
+  --danger:  var(--color-spark);
+  --info:    var(--color-hue-blue);
+
+  /* Weights */
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+  --fw-black:    800;
+
+  /* Line heights */
+  --leading-none:    0.95;
+  --leading-tight:   1.05;
+  --leading-snug:    1.18;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.65;
+
+  /* Letter spacing */
+  --tracking-tight:  -0.03em;
+  --tracking-snug:   -0.015em;
+  --tracking-wide:   0.04em;
+  --tracking-label:  0.18em;
+
+  /* Shadows / glows */
+  --shadow-sm: 0 1px 2px rgba(11,11,18,0.08), 0 1px 1px rgba(11,11,18,0.04);
+  --shadow-md: 0 6px 16px rgba(11,11,18,0.10), 0 2px 4px rgba(11,11,18,0.06);
+  --shadow-lg: 0 18px 40px rgba(11,11,18,0.14), 0 6px 12px rgba(11,11,18,0.08);
+  --shadow-xl: 0 32px 70px rgba(11,11,18,0.20);
+  --glow-spark:   0 0 0 1px rgba(255,45,26,0.40), 0 10px 40px -8px rgba(255,45,26,0.55);
+  --glow-blue:    0 0 0 1px rgba(44,107,255,0.40), 0 10px 40px -8px rgba(44,107,255,0.55);
+  --glow-cyan:    0 0 0 1px rgba(20,197,232,0.40), 0 10px 40px -8px rgba(20,197,232,0.55);
+  --glow-magenta: 0 0 0 1px rgba(255,46,139,0.40), 0 10px 40px -8px rgba(255,46,139,0.55);
+  --glow-soft:    0 24px 60px -20px rgba(0,0,0,0.7);
+
+  /* Gradients */
+  --grad-spectrum: linear-gradient(100deg, var(--color-hue-magenta) 0%, var(--color-hue-orange) 20%, var(--color-hue-yellow) 38%, var(--color-hue-green) 55%, var(--color-hue-cyan) 70%, var(--color-hue-blue) 85%, #A971FF 100%);
+  --grad-spark:    linear-gradient(120deg, var(--color-spark) 0%, var(--color-hue-magenta) 55%, var(--color-hue-violet) 100%);
+  --grad-cosmic:   linear-gradient(135deg, #2C1A5E 0%, #7C3AED 38%, #FF2E8B 70%, #FF9E1B 100%);
+
+  /* Motion */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-fast:  120ms;
+  --dur-base:  220ms;
+  --dur-slow:  420ms;
+  --dur-paint: 700ms;
+
+  --gutter: clamp(1.25rem, 4vw, 4rem);
+}
+
+[data-theme="paper"] {
+  --bg-canvas:       var(--color-paper);
+  --bg-canvas-stage: var(--color-paper);
+  --surface-1:       #FFFFFF;
+  --surface-2:       var(--color-paper-2);
+  --surface-3:       var(--color-paper-3);
+  --surface-inset:   var(--color-paper-2);
+
+  --text-primary:    #15131A;
+  --text-secondary:  #3C3947;
+  --text-muted:      #6B6776;
+  --text-inverse:    var(--color-paper);
+
+  --border-subtle: rgba(20,16,30,0.12);
+  --border-strong: rgba(20,16,30,0.26);
+
+  --link:       var(--color-hue-blue);
+  --link-hover: var(--color-spark);
+}
+
+/* ============================================================
+   BASE — reset + brand defaults + helpers (ported near-verbatim;
+   plain CSS, not component-level inline styles).
+   ============================================================ */
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--text-primary);
+  background: var(--bg-canvas);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: var(--fw-bold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-snug);
+  margin: 0 0 0.4em;
+  color: var(--text-primary);
+  text-wrap: balance;
+}
+h1 { font-size: var(--text-4xl); letter-spacing: var(--tracking-tight); }
+h2 { font-size: var(--text-3xl); }
+h3 { font-size: var(--text-xl); }
+h4 { font-size: var(--text-lg); }
+
+p { margin: 0 0 1em; text-wrap: pretty; }
+
+a { color: var(--link); text-decoration: none; transition: color var(--dur-fast) var(--ease-out); }
+a:hover { color: var(--link-hover); }
+
+::selection { background: var(--color-spark); color: #fff; }
+
+:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+  border-radius: var(--radius-xs);
+}
+
+.ew-eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  color: var(--text-muted);
+}
+
+.ew-spectrum-text {
+  background: var(--grad-spectrum);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.ew-spark-text {
+  background: var(--grad-spark);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.ew-rule-spectrum {
+  height: 4px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: var(--grad-spectrum);
+}
+
+.ew-marker {
+  background-image: linear-gradient(var(--color-spark), var(--color-spark));
+  background-repeat: no-repeat;
+  background-position: 0 88%;
+  background-size: 100% 0.32em;
+  padding: 0 0.04em;
+}
+
+.ew-container { max-width: var(--container-xl); margin-inline: auto; padding-inline: var(--gutter); }
+
+/* Motion kit */
+.ew-btn { position: relative; overflow: hidden; isolation: isolate; }
+.ew-btn::after {
+  content: ""; position: absolute; top: 0; left: -130%;
+  width: 55%; height: 100%;
+  background: linear-gradient(100deg, transparent 0%, rgba(255,255,255,0.40) 50%, transparent 100%);
+  transform: skewX(-18deg); pointer-events: none; z-index: 2;
+}
+.ew-btn:hover::after { animation: ew-shine 0.75s var(--ease-out); }
+.ew-btn--spectrum { background-size: 220% 100% !important; animation: ew-grad-drift 7s linear infinite; }
+@keyframes ew-shine { from { left: -130%; } to { left: 130%; } }
+@keyframes ew-grad-drift { to { background-position: 220% center; } }
+
+@keyframes ew-rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+
+.ew-reveal { opacity: 0; transform: translateY(24px); transition: opacity var(--dur-paint) var(--ease-out), transform var(--dur-paint) var(--ease-out); }
+.ew-reveal.is-in { opacity: 1; transform: none; }
+
+@keyframes ew-hero-pan { 0% { transform: scale(1.06) translate(0, 0); } 100% { transform: scale(1.14) translate(-2%, -2%); } }
+@keyframes ew-blob-drift { 0% { transform: translate(0,0) scale(1); } 50% { transform: translate(5%, -6%) scale(1.18); } 100% { transform: translate(0,0) scale(1); } }
+.ew-hero-pan { animation: ew-hero-pan 26s var(--ease-in-out) infinite alternate; }
+.ew-blob { position: absolute; border-radius: 50%; filter: blur(70px); pointer-events: none; will-change: transform; }
+
+.ew-logo-in { opacity: 0; animation: ewLogoIn 1.8s var(--ease-out) forwards; }
+@keyframes ewLogoIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+.ew-videocard { transition: transform 0.4s var(--ease-in-out), border-color 0.4s, box-shadow 0.4s; }
+.ew-videocard:hover { transform: translateY(-4px); border-color: var(--cardhue); box-shadow: 0 0 0 1px var(--cardhue), 0 18px 50px -8px color-mix(in srgb, var(--cardhue) 55%, transparent); }
+.ew-videocard-img { transition: transform 0.6s var(--ease-in-out); }
+.ew-videocard:hover .ew-videocard-img { transform: scale(1.06); }
+.ew-videocard-play { transition: transform 0.35s var(--ease-in-out); }
+.ew-videocard:hover .ew-videocard-play { transform: translate(-50%, -50%) scale(1.12); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; animation-iteration-count: 1 !important; }
+}
