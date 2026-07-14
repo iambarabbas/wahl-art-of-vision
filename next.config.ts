@@ -3,10 +3,13 @@ import path from "node:path";
 
 // Static export works identically on GitHub Pages, Cloudflare Pages, or any
 // static host -- no server required. GitHub Pages project sites serve from
-// a subpath (/repo-name/), so BASE_PATH lets the SAME build target either
-// host: leave it unset for a custom-domain/root deploy (Cloudflare later),
-// or set BASE_PATH=/art-of-vision when building for GitHub Pages now.
-const basePath = process.env.BASE_PATH || "";
+// a subpath (/repo-name/), so NEXT_PUBLIC_BASE_PATH lets the SAME build
+// target either host: leave it unset for a custom-domain/root deploy
+// (Cloudflare later), or set it to /wahl-art-of-vision for GitHub Pages now.
+// NEXT_PUBLIC_-prefixed because src/lib/base-path.ts (used by the custom
+// image loader, which runs client-side too) needs the same value inlined
+// into the browser bundle -- see that file for why a plain env var breaks.
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const nextConfig: NextConfig = {
   output: "export",
