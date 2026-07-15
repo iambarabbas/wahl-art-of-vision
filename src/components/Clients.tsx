@@ -70,7 +70,7 @@ function ClientListModal({ onClose }: { onClose: () => void }) {
     <div
       onClick={onClose}
       className="fixed inset-0 z-[2000] flex items-center justify-center p-5"
-      style={{ background: "rgba(6,6,11,0.85)", backdropFilter: "blur(6px)" }}
+      style={{ background: "rgba(6,6,11,0.6)", backdropFilter: "blur(6px)" }}
     >
       <div
         onClick={(e) => e.stopPropagation()}

@@ -30,8 +30,8 @@ export function BookingForm() {
         <div className="mt-3 rounded-lg border p-6" style={{ borderColor: "var(--border-subtle)", background: "var(--surface-1)" }}>
           <div className="font-display mb-3 text-lg font-extrabold">Prefer to talk?</div>
           <div className="ew-eyebrow mb-1.5" style={{ color: "var(--text-muted)" }}>Call the Wahl Group</div>
-          <a href="tel:+18587151997" className="font-display mb-4 block text-lg font-bold no-underline" style={{ color: "var(--text-primary)" }}>
-            858.715.1997
+          <a href="tel:+18582480619" className="font-display mb-4 block text-lg font-bold no-underline" style={{ color: "var(--text-primary)" }}>
+            858.248.0619
           </a>
           <div className="ew-eyebrow mb-1.5" style={{ color: "var(--text-muted)" }}>Email Tasha Moffitt</div>
           <a href="mailto:tmoffitt@theartofvision.com" className="font-mono text-sm" style={{ color: "var(--link)" }}>
