@@ -61,12 +61,16 @@ const KEYNOTES: Keynote[] = [
     tag: "Leadership",
     hue: "blue",
     title: "The Art of Leadership",
-    lead: "Today's leaders face pressure to innovate or perish unlike any time in history.",
-    body: "Erik paints a compelling new portrait of the successful leader of tomorrow, inspiring audiences to shed “business as usual” processes and build the emotional connection that drives engagement. Growth and comfort cannot co-exist.",
+    lead: "Today's leaders face pressure to innovate, adapt and inspire at a pace unlike any time in history.",
+    body: "Through this entertaining and highly practical program, Erik paints a compelling new portrait of the successful leader of tomorrow. He challenges audiences to move beyond “business as usual,” embrace the discomfort that comes with growth and build the emotional connection that drives engagement, innovation and meaningful organizational change.",
     cols: [
       [
-        "The end results",
-        ["Innovative solutions to further your organization", "Attracting and engaging quality employees", "New efficiencies and the end of redundancies"],
+        "Leading Through Change",
+        ["Moving beyond business as usual", "Embracing discomfort as a path to growth", "Turning uncertainty into opportunity"],
+      ],
+      [
+        "Engaging People",
+        ["Attracting and retaining quality employees", "Building stronger emotional connection", "Creating new efficiencies and eliminating redundancies"],
       ],
     ],
     img: "/assets/keynote-spark.jpg",
@@ -76,12 +80,16 @@ const KEYNOTES: Keynote[] = [
     tag: "Bestseller",
     hue: "violet",
     title: "UNTHINK",
-    lead: "Somehow we've come to believe creativity is reserved for the chosen few. The truth is bigger than that.",
-    body: "UNthink pushes your organization beyond habitual levels of performance, reframing thinking so new creative actions become possible. Begin to see your work as a blank canvas of limitless opportunity.",
+    lead: "Somewhere along the way, we began to believe creativity was reserved for a chosen few. The truth is far more powerful: creativity is a skill everyone can develop.",
+    body: "Erik challenges audiences to move beyond habitual thinking and reimagine what is possible. UNthink helps people break through limiting patterns, approach their work with fresh perspective and see every challenge as a blank canvas filled with opportunity.",
     cols: [
       [
-        "Actionable Takeaways",
-        ["Step outside convention for unexpected solutions", "Challenge pre-conceived notions of what's possible", "UNthink your way to creativity, productivity & passion"],
+        "Breaking Convention",
+        ["Stepping outside conventional thinking", "Challenging assumptions about what is possible", "Finding unexpected solutions"],
+      ],
+      [
+        "Unlocking Potential",
+        ["Increasing creativity and productivity", "Reigniting passion and curiosity", "Turning fresh ideas into action"],
       ],
     ],
     img: "/photos/kn-unthink.jpg",
@@ -91,12 +99,16 @@ const KEYNOTES: Keynote[] = [
     tag: "Bestseller",
     hue: "yellow",
     title: "The Spark & The Grind",
-    lead: "The paradox of creativity is that structure creates freedom.",
-    body: "Even the wildest minds require extreme orderliness so they have the space and discipline to create. Erik deconstructs the creative process to turn ideas into disciplined action, because disruption is the new normal.",
+    lead: "The paradox of creativity is that structure creates freedom. Even the wildest ideas need discipline, focus and follow-through to become something meaningful.",
+    body: "Erik deconstructs the creative process and shows audiences how to turn inspiration into disciplined action. In a world where disruption is the new normal, he reveals how structure, resilience and mental toughness help people navigate complexity and bring bold ideas to life.",
     cols: [
       [
-        "Real World Strategies",
-        ["Deconstruct the discipline of the creative process", "Explore the psychology of success & science of innovation", "Build the mental toughness to master complexity"],
+        "The Creative Process",
+        ["Turning inspiration into disciplined action", "Creating structure that supports innovation", "Moving ideas from possibility to execution"],
+      ],
+      [
+        "Mastering Complexity",
+        ["Understanding the psychology of success", "Exploring the science of innovation", "Building the mental toughness to adapt and persist"],
       ],
     ],
     img: "/photos/about-sneakers.jpg",
@@ -171,12 +183,6 @@ export function KeynoteExplorer() {
               sizes="(min-width: 768px) 50vw, 100vw"
               className="object-cover"
               style={{ objectPosition: k.imgPos ?? "center 32%" }}
-            />
-            <div
-              className="absolute inset-0"
-              style={{
-                background: `linear-gradient(120deg, color-mix(in srgb, var(--color-hue-${k.hue}) 30%, transparent), rgba(11,11,18,0.55))`,
-              }}
             />
           </div>
           <div className="p-7">
