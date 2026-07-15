@@ -10,7 +10,7 @@ interface PlayableVideo {
 }
 
 interface FeaturedVideo extends PlayableVideo {
-  len: string;
+  len?: string;
   img: string;
 }
 
@@ -20,14 +20,12 @@ interface GridVideo extends PlayableVideo {
 }
 
 const FEATURED: FeaturedVideo = {
-  id: "hAPEtFCjLq0",
-  title: "The Art of Vision Keynote",
-  len: "3:12",
-  img: "/assets/photo-stage-paint.jpg",
+  id: "6htIR6AL0LM",
+  title: "Erik Wahl Keynote",
+  img: "/photos/video-keynote.png",
 };
 
 const GRID_VIDEOS: GridVideo[] = [
-  { id: "6htIR6AL0LM", title: "Erik Wahl Keynote", img: "/photos/video-keynote.png", hue: "magenta" },
   { id: "l1O6kFp5yVU", title: "This is Erik Wahl", img: "/photos/video-thisis.png", hue: "cyan" },
   { id: "5CaVLqSLq3U", title: "Sizzle Reel", img: "/photos/video-sizzle.jpg", hue: "yellow" },
 ];
@@ -103,7 +101,7 @@ export function MediaVideos() {
                 </div>
                 <div className="absolute bottom-6 left-6">
                   <div className="font-mono text-hue-magenta mb-1.5 text-xs tracking-[0.12em] uppercase">
-                    Featured · {FEATURED.len}
+                    Featured{FEATURED.len ? ` · ${FEATURED.len}` : ""}
                   </div>
                   <div className="font-display text-2xl font-extrabold" style={{ color: "var(--text-primary)" }}>
                     {FEATURED.title}
