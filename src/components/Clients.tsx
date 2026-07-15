@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { CLIENT_GROUPS } from "@/lib/client-groups";
 
@@ -50,69 +50,96 @@ function LogoCell({ src, name, index }: { src: string; name: string; index: numb
   );
 }
 
+function ClientListModal({ onClose }: { onClose: () => void }) {
+  const total = CLIENT_GROUPS.reduce((n, g) => n + g.items.length, 0);
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [onClose]);
+
+  return (
+    <div
+      onClick={onClose}
+      className="fixed inset-0 z-[2000] flex items-center justify-center p-5"
+      style={{ background: "rgba(6,6,11,0.85)", backdropFilter: "blur(6px)" }}
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="relative flex h-[75vh] w-[92vw] flex-col overflow-hidden rounded-lg border sm:w-[75vw]"
+        style={{ background: "var(--ink-850)", borderColor: "var(--border-subtle)" }}
+      >
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="Close client list"
+          className="absolute top-4 right-4 flex h-11 w-11 cursor-pointer items-center justify-center rounded-full border text-2xl leading-none"
+          style={{ borderColor: "var(--border-subtle)", background: "var(--ink-850)", color: "var(--text-primary)" }}
+        >
+          ×
+        </button>
+
+        <div className="overflow-y-auto p-8 pt-14 [-webkit-overflow-scrolling:touch]">
+          <div className="ew-eyebrow mb-8 text-center" style={{ color: "var(--text-muted)" }}>
+            {total.toLocaleString()} organizations across {CLIENT_GROUPS.length} sectors
+          </div>
+          {CLIENT_GROUPS.map((g) => (
+            <div key={g.group} className="mx-auto mb-8 max-w-[1100px]">
+              <h3
+                className="font-mono m-0 mb-3 flex items-baseline justify-between gap-2 border-b pb-2 text-xs font-bold tracking-[0.14em] uppercase"
+                style={{ color: "var(--color-spark)", borderColor: "var(--border-subtle)" }}
+              >
+                <span>{g.group}</span>
+                <span className="font-normal" style={{ color: "var(--text-muted)" }}>
+                  {g.items.length}
+                </span>
+              </h3>
+              <ul className="m-0 list-none columns-1 gap-7 p-0 sm:columns-2 lg:columns-3">
+                {g.items.map((name) => (
+                  <li
+                    key={name}
+                    className="text-xs leading-[1.75] break-inside-avoid"
+                    style={{ color: "var(--text-secondary)" }}
+                  >
+                    {name}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function FullClientList() {
   const [open, setOpen] = useState(false);
-  const total = CLIENT_GROUPS.reduce((n, g) => n + g.items.length, 0);
 
   return (
     <div className="mt-8 text-center">
       <button
         type="button"
-        onClick={() => setOpen((o) => !o)}
-        aria-expanded={open}
+        onClick={() => setOpen(true)}
         className="font-mono inline-flex cursor-pointer items-center gap-2 border-0 border-b bg-none p-2 text-xs font-bold tracking-[0.14em] uppercase"
         style={{
           color: "var(--color-hue-cyan)",
           borderBottomColor: "color-mix(in srgb, var(--color-hue-cyan) 40%, transparent)",
         }}
       >
-        {open ? "Hide Client List" : "See Full Client List"}
-        <span
-          className="inline-block transition-transform duration-300 ease-in-out"
-          style={{ transform: open ? "rotate(180deg)" : "none" }}
-        >
-          ▾
-        </span>
+        See Full Client List
+        <span className="inline-block">▾</span>
       </button>
 
-      <div
-        className="grid text-left"
-        style={{ gridTemplateRows: open ? "1fr" : "0fr", transition: "grid-template-rows 0.55s var(--ease-in-out)" }}
-      >
-        <div className="min-h-0 overflow-hidden">
-          <div className="max-h-[500px] overflow-y-auto pt-6 [-webkit-overflow-scrolling:touch]">
-            <div className="ew-eyebrow mb-6 text-center" style={{ color: "var(--text-muted)" }}>
-              {total.toLocaleString()} organizations across {CLIENT_GROUPS.length} sectors
-            </div>
-            <div className="mx-auto grid max-w-[1100px] grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-x-7 gap-y-6">
-              {CLIENT_GROUPS.map((g) => (
-                <div key={g.group}>
-                  <h3
-                    className="font-mono m-0 mb-3 flex items-baseline justify-between gap-2 border-b pb-2 text-xs font-bold tracking-[0.14em] uppercase"
-                    style={{ color: "var(--color-spark)", borderColor: "var(--border-subtle)" }}
-                  >
-                    <span>{g.group}</span>
-                    <span className="font-normal" style={{ color: "var(--text-muted)" }}>
-                      {g.items.length}
-                    </span>
-                  </h3>
-                  <ul className="m-0 list-none columns-2 gap-5 p-0">
-                    {g.items.map((name) => (
-                      <li
-                        key={name}
-                        className="text-xs leading-[1.75] break-inside-avoid"
-                        style={{ color: "var(--text-secondary)" }}
-                      >
-                        {name}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
+      {open && <ClientListModal onClose={() => setOpen(false)} />}
     </div>
   );
 }
