@@ -26,7 +26,8 @@ export const POSTS: BlogPost[] = [
     readTime: "5 min",
     title: "The Alpha-Beta of Meditation: A Story of Transformation",
     dek: "From alpha-male achiever to beta-state calm: how surrendering to meditation unlocked a 'third force' that fuels real creative flow.",
-    image: "/assets/blog-alpha-beta-of-meditation-a-story-of-tran.jpg",
+    image: "/assets/blog/blog-the-alpha-beta-of-meditation-a-story-of-transformation.jpg",
+
     featured: true,
     body: [
     { type: "h", text: "The Alpha-Beta of Meditation: Accessing the 'Third Force'" },
@@ -60,7 +61,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "$10,000 Reward for Artwork",
     dek: "A lucky winner claimed this UNTHINK ART DROP panel in San Diego — now a buyer is offering $10,000 to secure it for their collection.",
-    image: "/assets/photo-wahls-15.jpg",
+    image: "/assets/blog/blog-10-000-reward-for-artwork.jpeg",
+
     body: [
     { type: "p", text: "$10,000 reward being offered. Congratulations to the person who claimed this UNTHINK ART DROP installation in San Diego, California." },
     { type: "q", text: "This artwork has unique value." },
@@ -77,7 +79,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "The Upside of Losing",
     dek: "Losing isn't the opposite of success — it's part of it. Kids need to feel the loss, learn from it, and try again.",
-    image: "/assets/photo-wahls-26.jpg",
+    image: "/assets/blog/blog-the-upside-of-losing.jpeg",
+
     body: [
     { type: "p", text: "Our kids play hard. They win some, they lose some, but only measuring success by wins is a losing proposition. Just because you didn't win doesn't mean you failed." },
     { type: "p", text: "Losing can be a gateway to develop success. Don't squander the opportunity of a good loss." },
@@ -96,7 +99,8 @@ export const POSTS: BlogPost[] = [
     readTime: "3 min",
     title: "UNthinking the Future of Education",
     dek: "Our schools are teaching kids to memorize for a world where memorization no longer matters — and the sand is running out.",
-    image: "/assets/photo-cosmic-figure.jpg",
+    image: "/assets/blog/blog-unthinking-the-future-of-education.jpeg",
+
     body: [
     { type: "p", text: "I have a confession to make. I am CONCERNED for our children. It's not because of the many ugly, dangerous things we see on the news or hear about on the radio. It's because of what I am watching happen right here, right now – at the schools we send our children to every single day." },
     { type: "p", text: "We should all be concerned. Those of us who have spent time in the education field know what I'm talking about. In the name of \"academic excellence,\" we are fighting the wrong battles and losing the war for their future. We're setting them up to fail, because we have failed to adapt." },
@@ -119,7 +123,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "A visual tour of Brooklyn's famous street art",
     dek: "Murals, graffiti, tagging — a walk through Bushwick, Brooklyn reveals three raw layers of street art that just feed creativity.",
-    image: "/assets/blog-a-visual-tour-of-brooklyns-famous-street.jpg",
+    image: "/assets/blog/blog-a-visual-tour-of-brooklyns-famous-street-art.png",
+
     body: [
     { type: "p", text: "There are three levels of street art — murals, graffiti, and tagging — and we experienced all of them and more when we ventured out to Bushwick, Brooklyn recently." },
     { type: "q", text: "Street art absolutely feeds me creatively." },
@@ -141,7 +146,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Anatomy of an ART DROP execution",
     dek: "A step-by-step chase for a hidden Erik Wahl ART DROP — bike locks, cryptic clues, and a frantic hunt through the trees outside a P!NK concert.",
-    image: "/assets/photo-wahls-40.jpg",
+    image: "/assets/blog/blog-anatomy-of-an-art-drop-execution.png",
+
     body: [
     { type: "p", text: "6:15- My mother gets an email alert from Facebook from my Aunt who lives in Denver. She sent a link to Erik Wahl's Facebook post on the Phoenix ART DROP. At the same time, Dad was calling from soccer about the post. Then, Aunt Dawn called me to look on facebook to see the clues and I saw the second clue about the Keys. I told my mom that P!NK was performing at US Airways center tonight so the ART DROP must be there." },
     { type: "p", text: "6:30- My mother has a friend who was going to the P!NK concert and so she decided to call her up. She asked her if she was able to go see if she could go get the painting for us. But little did we know that it was not be that simple." },
@@ -158,7 +164,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Art is about capturing raw human emotion",
     dek: "A tribute to filmmaker Gus Van Sant at the San Diego Film Festival, built around one idea: art exists to capture raw human emotion.",
-    image: "/assets/photo-wahls-40.jpg",
+    image: "/assets/blog/blog-art-is-about-capturing-raw-human-emotion.jpeg",
+
     body: [
     { type: "q", text: "Art is about capturing raw human emotion." },
     { type: "p", text: "Jonas Mekas, a Lithuanian born American Poet and Filmmaker who is often called the \"godfather of avante garde film\" was a huge influence in the creative vision of Gus Van Sant. To each of them art is all about defining and capturing the raw moments in life … that slice of pure human emotion." },
@@ -173,7 +180,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Breakthrough Thinking Techniques",
     dek: "Breakthrough thinking doesn't come from standardized formulas — it comes from breaking free into the arts, where art is freedom.",
-    image: "/assets/photo-dsc-interview.jpg",
+    image: "/assets/blog/blog-breakthrough-thinking-techniques.jpeg",
+
     body: [
     { type: "p", text: "Our minds are capable of so much more than we have allowed them to be pre-conditioned towards! The power of the human mind is phenomenal. Yet, how many frontiers have been left untouched because they involved risk or did not fit into pre-existing formulas? How many children have been marginalized because they did not test up to archaic \"standardized\" models of success?" },
     { type: "h", text: "We need to break free from mediocrity." },
@@ -190,7 +198,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Broken Education",
     dek: "Standardized testing doesn't measure value — it stigmatizes mistakes and cripples the very creativity kids need most.",
-    image: "/assets/photo-cosmic-figure.jpg",
+    image: "/assets/blog/blog-broken-education.jpeg",
+
     body: [
     { type: "q", text: "When I was young, it seemed that life was so wonderful, a miracle, it was beautiful, magical. And all the birds in the trees, well they'd be singing so happily, joyfully, playfully, watching me. But then they send me away to teach me how to be sensible, logical, responsible, practical. And they showed me a world where I could be so dependable, clinical, intellectual, cynical. —Supertramp" },
     { type: "p", text: "Our industrial factory educational system has become dysfunctionally obsessed with standardized testing. We measure and rank children's value based on their ability to regurgitate formulaic answers." },
@@ -208,7 +217,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Defamiliarize the Ordinary",
     dek: "Flip the schema upside down: creativity is the mental edge you gain by defamiliarizing the ordinary.",
-    image: "/assets/photo-stage-reach.jpg",
+    image: "/assets/blog/blog-defamiliarize-the-ordinary.jpeg",
+
     body: [
     { type: "p", text: "Cognitive psychologists say that we approach the world with a \"schema\", a way of grouping things to make them easier to understand." },
     { type: "p", text: "Certain things always belong together; others never do." },
@@ -225,7 +235,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Choose Joy",
     dek: "Choosing joy isn't a whimsical bumper sticker — it's a battle cry for the humanity of our soul.",
-    image: "/assets/blog-choose-joy.jpeg",
+    image: "/assets/blog/blog-choose-joy.jpeg",
+
     body: [
     { type: "p", text: "Our world is filled with horrific violence, senseless injustice, suffering, anger, selfishness and pain. And at the very same time our world is also filled with majestic beauty, humble servants, courage, loyalty, celebration, unity, peace and joy." },
     { type: "p", text: "But we have a choice." },
@@ -240,7 +251,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Comfortable with Uncomfortable",
     dek: "Getting uncomfortably nervous before every show is Erik Wahl's competitive advantage that keeps him comfortably alive.",
-    image: "/assets/photo-wahls-25.jpg",
+    image: "/assets/blog/blog-comfortable-with-uncomfortable.jpeg",
+
     body: [
     { type: "p", text: "When I first started performing in front of live audiences I got very nervous. I shared in confidence with another speaker how this ritual of anxiety played out before each presentation. The gentleman I was speaking to was a very respected speaker who had already made a big name for himself on the corporate lecture circuit. He encouraged me, \"Erik, as you continue speaking you will get more and more comfortable from the podium and more polished as a presenter.\"" },
     { type: "p", text: "That statement never sat well with me." },
@@ -258,7 +270,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Crazy Daddy Time",
     dek: "Three boys, one lab: how Erik Wahl turns fatherhood into research and development for creativity.",
-    image: "/assets/photo-wahls-27.jpg",
+    image: "/assets/blog/blog-crazy-daddy-time.jpeg",
+
     body: [
     { type: "p", text: "My job is to challenge professionals on the corporate lecture circuit to embrace creativity to achieve superior levels of performance. However, it is also my responsibility to ensure the survival of creativity within my own household. I am the father of three boys. We collaborate in our research and development to scientifically improve the creative process. It has become our brand of innovation workshops." },
     { type: "q", text: "My boys call it crazy daddy time." },
@@ -272,7 +285,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Discipline of Creativity",
     dek: "Beethoven, Kafka, Picasso, Twain: the masters prove that structure creates freedom, and creativity without discipline is a river without banks.",
-    image: "/assets/photo-wahls-40.jpg",
+    image: "/assets/blog/blog-discipline-of-creativity.jpeg",
+
     body: [
     { type: "p", text: "I have written a great deal about the whimsical-childlike process of dreaming up a new idea. I have shared far less about the lonely work I do to foster innovation. My personal dogged approach to grinding through resistance to discover unchartered territory. I have found some of my greatest creative breakthroughs occur when…… (are you ready for this)…… I am laser focused and militaristically disciplined." },
     { type: "p", text: "The paradox of creativity is that structure creates freedom. I am a naturally creative spirit who has built my business with extreme orderliness and attention to detail. The strength of this structure gives me greater confidence and freedom to create." },
@@ -295,7 +309,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "eP!phany in the pit of P!NK performance",
     dek: "P!NK missed a flip on her opening night, laughed it off, and the crowd roared — a lesson in vulnerability every performer needs.",
-    image: "/assets/photo-dsc-interview.jpg",
+    image: "/assets/blog/blog-epphany-in-the-pit-of-pnk-performance.jpeg",
+
     body: [
     { type: "p", text: "P!NK raised her glass and the bar tonight at her sold out opening show on her Truth About Love tour. And I had an epiphany from the rock pit." },
     { type: "p", text: "As the curtains flung open on the opening act, P!NK threw caution to the wind soaring high above the crowd with dynamic acrobatics and aerials. She floated and sang in synchronization to the robustly choreographed cirque du soleil visuals. Athletically and artistically brilliant for any world class aerialist let alone a rock and roller." },
@@ -317,7 +332,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Focus. Commit. Adapt.",
     dek: "Navy SEAL psychological profiling reveals the trait that separates the average from the elite: the ability to adapt.",
-    image: "/assets/photo-img-mural.jpg",
+    image: "/assets/blog/blog-focus-commit-adapt.jpeg",
+
     body: [
     { type: "p", text: "A friend of mine does the psychological profiling for the elite armed forces. In this case his work focuses on the US Navy Seals. He tests and scores them in both physiological and psychological challenges to determine how they continually achieve levels of superior performance. How do they remain unflinchingly calm in the face of the most harrowing situations? How do they sustain levels of peak performance amidst a rapidly changing and often chaotic environment?" },
     { type: "p", text: "After tremendous research, what he has boiler plated it down to are three core elements. That is the ability to focus. The ability to commit. And ultimately the ability to adapt." },
@@ -333,7 +349,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Fostering an environment for Breakthrough Thinking.",
     dek: "Are you an Artist or an Art Critic? A leader's job is to keep creating and inspiring, not just to critique.",
-    image: "/assets/photo-wahls-26.jpg",
+    image: "/assets/blog/blog-fostering-an-environment-for-breakthrough-thinking.jpeg",
+
     body: [
     { type: "h", text: "Are you an Artist or an Art Critic?" },
     { type: "q", text: "You stopped creating when you realized that if you never create, you never have to risk being criticized." },
@@ -349,7 +366,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Global Patriotism",
     dek: "Fresh off a Global Banking Summit in Monte Carlo, Erik makes the case for tuning out the media and becoming a Global Patriot instead.",
-    image: "/assets/photo-wahls-27.jpg",
+    image: "/assets/blog/blog-global-patriotism.jpeg",
+
     body: [
     { type: "p", text: "I just returned from Monte Carlo, Monaco where I keynoted a Global Banking Summit. The delegates were comprised of CEOs from financial institutions in 40 different countries around the world. It was a beautiful collaboration of diversity, intelligence and camaraderie." },
     { type: "p", text: "My presentation was titled “UnTh!nk” – Creating a New Frontier. It was a conference of astoundingly powerful individuals. But what struck me the most was their keen interest to unite their influence to improve the world — to “UnTh!nk” their past success and form a new horizon of global financial solutions." },
@@ -368,7 +386,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Graffiti artist tags cover of Alma Mater",
     dek: "After losing everything in the 9/11 crash, Erik picked up a paintbrush — and painted his way into a wildly unconventional new career.",
-    image: "/assets/photo-wahls-15.jpg",
+    image: "/assets/blog/blog-graffiti-artist-tags-cover-of-alma-mater.jpeg",
+
     body: [
     { type: "p", text: "By Sandra Younger" },
     { type: "p", text: "The lights dim. The music rises. Images of the rock band U2 fill two enormous video screens on either side of a spotlit stage where Erik Wahl ’93 darts between pots of paint and a huge black canvas, filling it with vibrant smears of color." },
@@ -391,7 +410,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Honoring the Legacy of Dr. MLK",
     dek: "Ahead of a MLK tribute performance, Erik makes the case for unity over uniformity — and why one heals while the other divides.",
-    image: "/assets/photo-wahls-36.jpg",
+    image: "/assets/blog/blog-honoring-the-legacy-of-dr-mlk.jpeg",
+
     body: [
     { type: "p", text: "I get the privilege to perform at the University of Michigan in tribute to the legacy of Dr. Martin Luther King Jr. — a welcome change of pace from my traditional corporate show." },
     { type: "p", text: "Year after year, our nation has faced deeply divisive incidents of violence and anger. Dr. King said we must learn to live together as brothers, or perish together as fools. My presentation will be about inspiring social justice through unity, not uniformity." },
@@ -411,7 +431,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "How to Fall in Love Again…",
     dek: "A short meditation on slowing down long enough to fall in love with a moment, a phrase, a life — again and again and again.",
-    image: "/assets/photo-wahls-25.jpg",
+    image: "/assets/blog/blog-how-to-fall-in-love-again.jpeg",
+
     body: [
     { type: "p", text: "Somewhere each day we have to fall in love with someone, something, some moment, event or phrase. Somehow each day we must allow the softening of the heart." },
     { type: "p", text: "Otherwise our hearts will move inevitably toward hardness. We will move toward cynicism, bitterness, fear and despair." },
@@ -427,7 +448,8 @@ export const POSTS: BlogPost[] = [
     readTime: "5 min",
     title: "How to ignite curiosity in education",
     dek: "Our schools are built for standardized tests, not standardized wonder. Erik asks what it would take to teach fascination instead.",
-    image: "/assets/photo-stage-reach.jpg",
+    image: "/assets/blog/blog-how-to-ignite-curiosity-in-education.jpg",
+
     body: [
     { type: "h", text: "Can We Teach Fascination?" },
     { type: "p", text: "The other day I found a list of the 25 most in-demand skills for today’s workers. Among them, after statistical analysis and data mining: “middleware” and integration software. Algorithm design. Web architecture and development framework. User interface design. Middleware? I don’t even know what that is, and I bet nobody else did 20 years ago. But apparently, it’s a thing. A lucrative thing." },
@@ -455,7 +477,8 @@ export const POSTS: BlogPost[] = [
     readTime: "3 min",
     title: "Is it worth the risk?",
     dek: "A raw, unfiltered confession: Erik fails more than anyone he knows — and still won’t sail his boat back to shore.",
-    image: "/assets/photo-img-mural.jpg",
+    image: "/assets/blog/blog-is-it-worth-the-risk.jpeg",
+
     body: [
     { type: "p", text: "Life is raw. Life is dynamic. Life is not a series of motivational quotes strung together in perfectly choreographed sentences." },
     { type: "p", text: "The reality of life can be very painful and sometimes very difficult. And, depending on how we process these challenges, life can feel more like a series of failures rather than a glorious success. The truth is that I fail more than anyone I know. This may come as a surprise to those of you who know me from the protection of the public stage or the triumphs I choose to selectively make public." },
@@ -477,7 +500,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "life is real. pain and triumph. stay strong.",
     dek: "When his son needed surgery and the tour needed him too, Erik learned life can be fragile and triumphant in the same sentence.",
-    image: "/assets/photo-wahls-36.jpg",
+    image: "/assets/blog/blog-life-is-real-pain-and-triumph-stay-strong.jpeg",
+
     body: [
     { type: "p", text: "A very good friend and spiritual mentor has strongly encouraged me that being vulnerable and transparent in my weakness can be endearing. I am not so sure… We’ll see. I am a motivational speaker who is broken today. I am heading on tour for a major gig tomorrow morning." },
     { type: "p", text: "However, my 13-year-old son suffered a violent break in his leg — both bones in his lower fibula and tibia, a double compound fracture — this weekend in the championship game of his soccer tournament. He went straight to the ER in immense pain, and 24 hours later is still in pain and enveloped by fear as he must go back into surgery tonight. I held him throughout the night and gave him peace and encouragement. But I had to leave his side. I had to “go back to work.”" },
@@ -496,7 +520,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Lucky to find MLK",
     dek: "Erik’s art was never for sale — until an ARTDROP painting of Dr. King turned up on a fence, waiting for the right person to find it.",
-    image: "/assets/photo-wahls-08.jpg",
+    image: "/assets/blog/blog-lucky-to-find-mlk.jpeg",
+
     body: [
     { type: "p", text: "As you may or may not already know, Erik’s work isn’t for sale. You can’t make an offer for one of his paintings, and you won’t find them in a gallery with a price tag either. It’s just not going to happen." },
     { type: "p", text: "However, you’re not totally out of luck, as there are two main ways that you can own a painting." },
@@ -516,7 +541,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Missions to Mars",
     dek: "Failure is the price of the ticket. I'd rather crash toward Mars than play it safe on Planet Wahl.",
-    image: "/assets/blog-missions-to-mars.jpeg",
+    image: "/assets/blog/blog-the-enemy-of-passion.jpeg",
+
     body: [
     { type: "q", text: "I feel like a failure." },
     { type: "p", text: "Those were the small shocking words I couldn't believe exited my mouth in a phone conversation with a friend. I had just punctuated a candid laundry list of my failed career investments. I've experienced some artistic success….. but I've also made TV pilots and films people will never see, I've written screenplays and books the public will never read, I've never won a Pulitzer prize, an Academy award, an Emmy or a Grammy. Am I an artistic failure?" },
@@ -534,7 +560,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Mystery Adds Meaning",
     dek: "Mystery isn't the enemy of meaning — it's the source of it, and the reason curiosity ever gets started.",
-    image: "/assets/blog-mystery-adds-meaning.jpeg",
+    image: "/assets/blog/blog-mystery-adds-meaning.jpeg",
+
     body: [
     { type: "q", text: "When mystery leads, curiosity follows." },
     { type: "p", text: "When curiosity is a driving force, a person remains interested, present and in passionate pursuit. Kids are notorious for driving their parents crazy with incessant questions. Whys, why nots, and what ifs. There are few things more constant in a child's life than curiosity. But these questions are the reason they learn so much so quickly." },
@@ -550,7 +577,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Pink ART DROP",
     dek: "I hid a hand-painted tribute to P!nk somewhere in LA before her VMA return. First to find it keeps it.",
-    image: "/assets/blog-pink-art-drop.jpeg",
+    image: "/assets/blog/blog-pink-art-drop.jpeg",
+
     body: [
     { type: "p", text: "On April 30, 2012 my wife and I met P!nk and her husband Carey Hart at Linda's Voice, a charity auction in Beverly Hills that we both attended to help end domestic violence." },
     { type: "p", text: "I later performed a painting of Marilyn Monroe choreographed to a tribute video in an effort to support the cause….. and then P!nk supported the cause and me by out-bidding all other bidders to purchase the painting in front of a sea of global media flashbulbs." },
@@ -567,7 +595,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Rediscover Your Fearless Creativity",
     dek: "Creativity was never reserved for the chosen few. It's in all of us, waiting to be rediscovered.",
-    image: "/assets/blog-rediscover-your-fearless-creativity.jpeg",
+    image: "/assets/blog/blog-rediscover-your-fearless-creativity.jpeg",
+
     body: [
     { type: "p", text: "Somehow we've come to believe that creativity is reserved for the chosen few, for the poets, the painters, the artists." },
     { type: "p", text: "The truth is creativity is in all of us. It is about discovering who you were meant to be. Because creativity is not in one special place, and it is not in one special person." },
@@ -581,7 +610,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Selling Our Souls to Science",
     dek: "We traded sacred inspiration for scoring systems — and became human doings instead of human beings.",
-    image: "/assets/blog-selling-our-souls-to-science.jpeg",
+    image: "/assets/blog/blog-selling-our-souls-to-science.jpeg",
+
     body: [
     { type: "p", text: "The age of Enlightenment gave birth to the scientific revolution as a new system to \"enlighten\" and save the world. It did much good. It gave us systems like formal education, a penal system, a tax system and a centralized healthcare system to save lives. It was also the foundation for democracy (and our Declaration of Independence)." },
     { type: "p", text: "But like any system – it came at a cost." },
@@ -598,7 +628,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Shockingly Beautiful",
     dek: "Genuine beauty gives humanity a healthy shock — it wrenches us awake and carries us aloft.",
-    image: "/assets/blog-shockingly-beautiful.jpeg",
+    image: "/assets/blog/blog-shockingly-beautiful.jpeg",
+
     body: [
     { type: "p", text: "Closing excerpt from Pope Benedict XVI, addressing 250 cardinals, deacons, artists and priests inside the Sistine Chapel:" },
     { type: "p", text: "\"Dear artists, as I draw to conclusion, I too would like to make a cordial, friendly and impassioned appeal to you, as did my Predecessor. You are the custodians of beauty.\"" },
@@ -615,7 +646,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Sometimes It's Right In Front of You",
     dek: "A thousand commuters walked past one of the world's greatest violinists — and almost none of them stopped.",
-    image: "/assets/blog-sometimes-its-right-in-front-of-you.jpg",
+    image: "/assets/blog/blog-sometimes-its-right-in-front-of-you.png",
+
     body: [
     { type: "p", text: "As Erik works at the intersection of creativity and business, he's constantly aware of the creative opportunities that often lie right in front of us. Often, these opportunities are right in front of us and we miss them." },
     { type: "p", text: "During Erik's presentation, which many of you have witnessed, he highlights that as we've grown up we've been taught that we're less and less artists and instead taught specific functions for society's purposes later on. During this transformation we became less aware of our own creativity and our ability to make something beautiful out of our surroundings." },
@@ -634,7 +666,8 @@ export const POSTS: BlogPost[] = [
     readTime: "3 min",
     title: "Stop Trying to Be Perfect. Start Being Authentic.",
     dek: "Millennials don't want your airbrushed perfection. Stop performing. Start being real.",
-    image: "/assets/blog-stop-trying-to-be-perfect-start-being-au.jpg",
+    image: "/assets/blog/blog-stop-trying-to-be-perfect-start-being-authentic.jpg",
+
     body: [
     { type: "p", text: "Snapchat may feel silly to us. But it is very real to our kids. And it is ultra sticky." },
     { type: "p", text: "Millennials don't care about our \"glamorous\" commercials, our \"airbrushed\" magazine ads, our \"botoxed\" billboards or our \"optimized\" pop up windows. Email? Ha. That's what our kids use when they need to send a thank you note to their grandparents for their birthday gift." },
@@ -661,7 +694,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "The #1 best tip to Capture Creativity",
     dek: "Creativity is hard and resistance is relentless. Surrender to the uncertainty, unthink, and unleash your childlike imagination again.",
-    image: "/assets/blog-1-best-tip-to-capture-creativity.jpeg",
+    image: "/assets/blog/blog-the-1-best-tip-to-capture-creativity.jpeg",
+
     body: [
     { type: "p", text: "Creativity is hard. This is a personal confession and maybe you feel it as well. The tools I use to define the world around me, make it so simple, so safe and so predictable, that I sometimes I find myself managing data more often than I spend time creating data. And that, my friends, is a dangerous and slippery (yet well groomed) slope from conformity to mediocrity." },
     { type: "p", text: "As my friend, Steven Pressfield says in his book, The War of Art, the Resistance we face each day is relentless on keeping us from the act of creation. It comes from friends, teachers, parents and bosses as well as our own self-deprecation. It is so strong that it manipulates our mind with to-do lists and clamoring busywork to avoid the untrained act of creating something from nothing. It is a quiet whisper amidst a noisy world." },
@@ -680,7 +714,8 @@ export const POSTS: BlogPost[] = [
     readTime: "4 min",
     title: "The Art Of Engagement",
     dek: "Employees and students alike are bored out of their minds. Real engagement starts by freeing curiosity, not enforcing compliance.",
-    image: "/assets/blog-art-of-engagement.jpg",
+    image: "/assets/blog/blog-the-art-of-engagement.png",
+
     body: [
     { type: "p", text: "More so than ever before, employees and students are bored out of their minds. I work regularly with Fortune 500 companies, and their leaders tell me that engagement—or rather, the lack thereof—has become their primary focus. Unfortunately, organizations struggle to secure employee commitment because people are conditioned to go through the motions. Before they were employees, they were students, and schools have taught them to be disengaged." },
     { type: "p", text: "In a teach-to-the-test era, kids are memorizing machines, committing facts and figures to memory in order to do well on standardized exams. Rarely do they receive the chance to explore idiosyncratic interests or pursue topics about which they're passionate. Instead, they receive good grades for competence, just as employees receive decent salaries for efficiency." },
@@ -702,7 +737,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "The Art of Goal Setting",
     dek: "Goals are achieved twice: first in your mind, then in reality. Make yours a compass, not a map, and refuse to ever give up.",
-    image: "/assets/blog-art-of-goal-setting.jpg",
+    image: "/assets/blog/blog-the-art-of-goal-setting.jpg",
+
     body: [
     { type: "p", text: "The starting point for success is desire. Desire is much stronger than just \"want to\" it is the inner drive/strength that make your dreams come alive. Set a goal that is exciting to you. That serves as your alarm clock and makes you want to jump out of bed in the morning. Allow this goal to be your compass." },
     { type: "p", text: "A compass is designed to help you find your way again." },
@@ -720,7 +756,8 @@ export const POSTS: BlogPost[] = [
     readTime: "3 min",
     title: "The Art of Parenting",
     dek: "Stop being a coach. Start being a cheerleader. Give your kids, and your employees, free rein and watch them blossom.",
-    image: "/assets/blog-art-of-parenting.jpeg",
+    image: "/assets/blog/blog-the-art-of-parenting.jpeg",
+
     body: [
     { type: "p", text: "I have three boys. As they were growing up, we invented a strategic creativity workshop called \"Crazy Daddy Time.\" The point was to create a designated space and time where we pursued our imagination with reckless abandon. As a loving parent, it was tough! I struggled against my default inner voice focused on monitoring them toward conventional wisdom and sanity. But for twenty minutes every day, I gave them free-reign. \"Can we decorate our little brother with shaving cream? Yes. Can we eat dinner backwards starting with dessert? Yes. Can we cover ourselves in flour and sumo wrestle? (Sigh) Yes.\"" },
     { type: "p", text: "Early in their lives, my boys naturally explored their world as a daring adventure. I rarely used structure as they learned to push boundaries, chart new territories, and even attempt to form their own Lord of the Flies fashioned-militia. My desire was for them to think outside the box and encourage them (under proper protection) to spot the results between good and bad ideas." },
@@ -740,7 +777,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "The ARTWORK REVOLUTION™ creativity test",
     dek: "Nine artistic archetypes, one big question: what kind of artist are you? Take the test and rediscover the genius you buried at work.",
-    image: "/assets/blog-artwork-revolution-creativity-test.jpeg",
+    image: "/assets/blog/blog-the-artwork-revolution-creativity-test.jpeg",
+
     body: [
     { type: "p", text: "The ArtWork Revolution was created to help you view the world from an entirely new perspective. It will not only change the way you look at your job, but also how you view life itself, allowing you to be the artist you were created to be. After narrowing down all artistic talents into nine specific artistic archetypes, this evaluation will show you what skills you have been gifted with, and offer you the developmental tools to turn your 'work' into 'ArtWork'." },
     { type: "h", text: "WHAT HIDDEN ARTISTIC TALENTS DO YOU NEED TO REDISCOVER?" },
@@ -756,7 +794,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "The Deadmau5 Experience and ART DROP",
     dek: "A student of every stage he can find, Erik breaks down the Deadmau5 show like a business case study, then drops art of his own in Miami.",
-    image: "/assets/blog-deadmau5-experience-and-art-drop.jpeg",
+    image: "/assets/blog/blog-the-deadmau5-experience-and-art-drop.jpeg",
+
     body: [
     { type: "p", text: "While Erik's been on a whirlwind trip full of speaking engagements, he's been up to some fun things. Just the other night he was in Miami and attended a Deadmau5 concert – an experience really." },
     { type: "p", text: "Deadmau5 (pronounced \"Dead Mouse\") has been taking the world by storm with his unique mix of electronic music and live show that pulls out all the stops. His worldwide popularity is huge and his fan base is rabid, to say the least." },
@@ -779,7 +818,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "The Enemy of Passion",
     dek: "Fear is the thief of passion. Let it stop you, and it steals your boldest dreams before you ever chase them.",
-    image: "/assets/blog-enemy-of-passion.jpeg",
+    image: "/assets/blog/blog-the-enemy-of-passion.jpeg",
+
     body: [
     { type: "q", text: "\"To play a wrong note is insignificant. To play without passion is inexcusable.\" — Ludwig Van Beethoven" },
     { type: "p", text: "If comparison is the thief of joy, I'd venture to say that fear is the thief of passion." },
@@ -794,7 +834,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "The Purpose of Art",
     dek: "Art isn't a product you finish — it's a process of thinking you never stop.",
-    image: "/assets/photo-wahls-15.jpg",
+    image: "/assets/blog/blog-the-purpose-of-art.jpeg",
+
     body: [
     { type: "p", text: "The purpose of art is not to produce a product. The purpose of art is to produce thinking. The secret is not the mechanics or technical skill that create art – but the process of introspection and different levels of contemplation that generate it. Once you learn to embrace this process, your creative potential is limitless." },
     { type: "p", text: "Artwork should be an active verb (a lens by which to view the world) not a passive noun (a painting that sits dormant in a museum). Creativity lies NOT in the done but in the doing. Art is active and incomplete. Always shifting, always becoming. Art is a sneak peek into the future of potential, of what could be. Not a past result of what has been already done. Art is a process not a product." },
@@ -808,7 +849,8 @@ export const POSTS: BlogPost[] = [
     readTime: "3 min",
     title: "The Stockbroker & the Street Artist",
     dek: "A father warns his son off art for money — but it's the street artist who drives home to the richer life.",
-    image: "/assets/photo-wahls-25.jpg",
+    image: "/assets/blog/blog-the-stockbroker-the-street-artist.jpeg",
+
     body: [
     { type: "p", text: "Spirits were high as a father took a half-day from his work as a stockbroker and surprised his young son, pulling him from boarding school to go on a special date to enjoy the local town fair. It had been a very challenging year for their family since the divorce. The father and son immediately laughed and ate funnel cake and twirled on rides together. Near the end of the day, the son was overjoyed to spot a street artist. He begged his dad to pose with him for a picture. The father reluctantly agreed and waited in line with his son because he took such delight in seeing his son beam with excitement." },
     { type: "p", text: "As they approached the front the son sat on his dad's lap, the father loosened his tie and posed as the street artist smiled and quietly got to work. After a moment the artist requested a quick intermission to stand up and hug an old friend. The father welcomed the break and took a moment to bond with his son. He leaned in and quietly asked \"what do you want to be when you grow up?\" Without skipping a beat, the son gleefully responded, \"An artist!\" The father smiled. He knew the festival was fun. He knew the atmosphere was contagious, but the well-meaning father recognized that this was a teachable moment. He used the opening as an opportunity to educate his son about the real world." },
@@ -827,7 +869,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "The War of Art",
     dek: "Resistance is the enemy standing between the life you live and the life you were meant to live.",
-    image: "/assets/photo-wahls-02.jpg",
+    image: "/assets/blog/blog-the-war-of-art.jpeg",
+
     body: [
     { type: "p", text: "Creativity is easy to achieve – because so many people are satisfied with mediocrity. So many people are satisfied to do things the way they have always been done because that appears to be the path of the least resistance." },
     { type: "p", text: "Everyone talks about \"being extraordinary,\" \"being creative\" or \"going the extra mile.\" Yet almost no one actually does it. Most people who get temporarily inspired get there and think, \"wait…no one else is here…why am I doing this?\" And they stop….giving into that resistance." },
@@ -846,7 +889,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "These are a few of my (Erik's) favorites things",
     dek: "From Barcelona hotels to Banksy — the running list of places, books, and artists that fuel Erik's road life.",
-    image: "/assets/photo-wahls-37.jpg",
+    image: "/assets/blog/blog-these-are-a-few-of-my-eriks-favorites-things.png",
+
     body: [
     { type: "p", text: "As someone who travels constantly and has a strong desire to take in his surroundings at every bend in the road, here are a few of Erik's favorite things. Maybe when you're out traveling, or looking for suggestions, Erik's Favorites will serve as a welcome suggestion to enjoy the fruits of life wherever you are." },
     { type: "p", text: "Below are some suggestions from Erik. Also be sure to check out his Pinterest board." },
@@ -877,7 +921,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Tips for parenting a creative child",
     dek: "Forget the school budget — become a full-time art commissioner for your own kids.",
-    image: "/assets/photo-wahls-37.jpg",
+    image: "/assets/blog/blog-tips-for-parenting-a-creative-child.png",
+
     body: [
     { type: "p", text: "Creativity is not just a talent for painting, building, dancing, performing et cetera. Creativity is an exercise to expand our minds into possibility." },
     { type: "p", text: "Therefore it is important to understand exactly why we want to keep access to the arts for our children. Both at home and at school. I personally believe it is the responsibility of the parents to properly value the arts in our children – not only the schools." },
@@ -903,7 +948,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Tips on parenting a creative child",
     dek: "Stop blaming the school system — Lego castles and Crayola crests build creative kids at home.",
-    image: "/assets/photo-wahls-41.jpg",
+    image: "/assets/blog/blog-tips-on-parenting-a-creative-child.jpeg",
+
     body: [
     { type: "p", text: "1. Stop complaining about the lack of creativity in our public school system. We are losing our best, most nurturing teachers because there is so much negativity surrounding this subject in our educational system." },
     { type: "p", text: "2. Take personal accountability for their creativity as a parent. Teach creativity and the arts at home. Help them grow their own dreams, challenge their assumptions and break through preconceived barriers and notions. Stop trying to be perfect and start being remarkable." },
@@ -924,7 +970,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "UNthink and UNLEASH",
     dek: "UNthink is your permission slip to slip the leash and run free with new ideas.",
-    image: "/assets/photo-wahls-17.jpg",
+    image: "/assets/blog/blog-unthink-and-unleash.jpeg",
+
     body: [
     { type: "p", text: "I have a puppy named Chloe. I put a LEASH on my little dog in public to respectfully limit her unpredictable behavior and maintain my authoritative command over her movement. In proper outdoor social settings though…I delight with whimsy as I UNLEASH my puppy and allow her to run free, to romp and frolic and discover boundless new sights, smells and sounds." },
     { type: "p", text: "When I went to school my childlike curiosity was also leashed to submit to similar authoritative control. My imagination took a back seat to develop my linear and logical capacity to read, write and critically THINK in standardized predictable patterns." },
@@ -941,7 +988,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "UNTHINK & fail your way to the top",
     dek: "Progress, not perfection: let failure spark the breakthrough instead of slowing you down.",
-    image: "/assets/photo-stage-reach.jpg",
+    image: "/assets/blog/blog-unthink-fail-your-way-to-the-top.jpeg",
+
     body: [
     { type: "q", text: "\"If everything seems under control, you are not going fast enough.\" – Mario Andretti, Formula 1 Racing legend" },
     { type: "p", text: "Accelerated output changes the game." },
@@ -962,7 +1010,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "UNTHINK - the official book trailer",
     dek: "We were explorers, full of wonder and color and life — until we grew older and efficient. Genius lives when wonder wakes.",
-    image: "/assets/photo-wahls-05.jpg",
+    image: "/assets/blog/blog-fostering-an-environment-for-breakthrough-thinking.jpeg",
+
     body: [
     { type: "p", text: "UNTHINK – artist & author, Erik Wahl, from The Art of Vision on Vimeo." },
     { type: "p", text: "we believed we could be anyone and we were. we were explorers, artists, inventors, full of wonder, full of color and life. we abandoned caution in a quest for the unknown." },
@@ -977,7 +1026,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "UNTHINK your Creative genius",
     dek: "Kids are masters of spontaneity — ice cream at 7am, trampolines at 10pm. Somewhere along the way, we learned to say no.",
-    image: "/assets/photo-wahls-42.jpg",
+    image: "/assets/blog/blog-unthink-your-creative-genius.jpeg",
+
     body: [
     { type: "p", text: "Spend an hour around any child and you know that they have unyielding tenacity. They pursue their dreams the moment they arise and do not quit until they have what they have set out to get. Children are the masters of spontaneity. They are up for anything, anytime – especially before the requirements of \"conventional wisdom\" and \"standardized education\" gave them reason to say no." },
     { type: "p", text: "Ice Cream at 7:00am? Absolutely. Trampoline at 10:00pm? Why not. Song in the middle of a crowded restaurant? Which one would you like to hear?" },
@@ -996,7 +1046,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "UNTH!NK - Rediscover Your Creative Genius",
     dek: "Critical thinking narrows the world to one safe answer. Unth!nking reopens it to boundless possibility.",
-    image: "/assets/photo-wahls-43.jpg",
+    image: "/assets/blog/blog-unthnk-rediscover-your-creative-genius.jpeg",
+
     body: [
     { type: "p", text: "Critical thinking is the foundation of our formal educational process and has become increasingly significant as students progress through school to prepare for the \"real world.\"" },
     { type: "p", text: "If critical thinking is the pragmatic process of calculating and reducing our options and ideas down to a single reasonable, safe, predictable answer… then may I be so bold as to submit the notion of \"unth!nking\" our critical thinking process." },
@@ -1011,7 +1062,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Virtual ART DROP in Honor of Steve Jobs",
     dek: "To honor a genius who taught the world to think differently, Erik gave away a painting instead of selling it.",
-    image: "/assets/photo-wahls-11.jpg",
+    image: "/assets/blog/blog-virtual-art-drop-in-honor-of-steve-jobs.jpeg",
+
     body: [
     { type: "p", text: "On occasion, Erik is inspired by the world around him to create a special contest for his fans. Currently, he has chosen to offer a Virtual ART DROP focused on the life and legacy of Steve Jobs." },
     { type: "p", text: "Steve's vision for the future and his desire for breakthrough thinking changed multiple industries, which eventually changed the world we all live in. He was an icon of computer innovation, a product design genius at Apple, and a visionary investor at Pixar. But he also served as a role model for Erik and a beacon of what it looks like to \"think differently.\"" },
@@ -1027,7 +1079,8 @@ export const POSTS: BlogPost[] = [
     readTime: "4 min",
     title: "Wake Up Dead Man",
     dek: "The masses live quiet lives of desperation. The 1% wake up, take the risk, and chase the treasure.",
-    image: "/assets/photo-wahls-03.jpg",
+    image: "/assets/blog/blog-wake-up-dead-man.jpeg",
+
     body: [
     { type: "q", text: "\"The masses of men live quiet lives of silent desperation.\" – Thoreau" },
     { type: "p", text: "The masses long for a better future. The minority take matters into their own hands and get up and do the work." },
@@ -1054,7 +1107,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "what is ART DROP?",
     dek: "Erik hides his paintings around the world — the first person to find one gets to keep it.",
-    image: "/assets/photo-wahls-01.jpg",
+    image: "/assets/blog/blog-what-is-art-drop.jpeg",
+
     body: [
     { type: "h", text: "What is ART DROP?" },
     { type: "p", text: "In short, ART DROP is where I hide my artwork around the world and then design a treasure hunt where the first person to find it – gets to keep it." },
@@ -1076,7 +1130,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Who Am I?",
     dek: "We're taught to ask who we want others to think we are. The real question is who we've always been.",
-    image: "/assets/photo-wahls-02.jpg",
+    image: "/assets/blog/blog-who-am-i.jpeg",
+
     body: [
     { type: "p", text: "We live in a look-at-me culture. It's the zeitgeist of both corporate and personal branding. Attention equals followers. Followers equal buzz. Buzz equals popularity." },
     { type: "p", text: "The trouble is that popularity doesn't seem to stick the way most would like it to. That's because we also live in a culture that promotes and praises veneered identities." },
@@ -1095,7 +1150,8 @@ export const POSTS: BlogPost[] = [
     readTime: "2 min",
     title: "Your style is your art",
     dek: "Your coffee order, your tattoos, your business — it's all art. Sign your masterpiece with excellence.",
-    image: "/assets/photo-wahls-01.jpg",
+    image: "/assets/blog/blog-your-style-is-your-art.jpeg",
+
     body: [
     { type: "q", text: "Your style is your art. Your art is your brand." },
     { type: "p", text: "It is your way of sharing who you are without having to speak. I think everything in life is art. What you do, how you dress, the way you love and how you talk. The way you run your business. The way you drink your coffee, how you decorate your office and what makes you smile. Your personality, your jewelry, your tattoos, what you believe in and all your dreams." },
