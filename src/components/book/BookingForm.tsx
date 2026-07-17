@@ -3,14 +3,39 @@
 import { useState } from "react";
 import { Input, Button, Tag } from "@/components/ui";
 
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xvzekdkd";
+
 const STEPS: [string, string, string, string][] = [
   ["01", "magenta", "Tell us about your event", "Share your date, audience, and goals. We respond within one business day."],
   ["02", "cyan", "Design the moment", "We'll match the right keynote and tailor the live painting to your theme."],
   ["03", "yellow", "Erik takes the stage", "An unforgettable experience, and a finished work of art the room will never forget."],
 ];
 
+type Status = "idle" | "submitting" | "sent" | "error";
+
 export function BookingForm() {
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<Status>("idle");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus("submitting");
+    const form = e.currentTarget;
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        setStatus("sent");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  }
 
   return (
     <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] items-start gap-12">
@@ -41,7 +66,7 @@ export function BookingForm() {
       </div>
 
       <div>
-        {sent ? (
+        {status === "sent" ? (
           <div className="rounded-lg border p-16 text-center" style={{ borderColor: "var(--border-subtle)", background: "var(--surface-1)" }}>
             <div className="mb-3 flex justify-center">
               <Tag variant="filled" hue="green" dot>Request received</Tag>
@@ -54,29 +79,34 @@ export function BookingForm() {
           </div>
         ) : (
           <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              setSent(true);
-            }}
+            onSubmit={handleSubmit}
             className="grid grid-cols-2 gap-4 rounded-lg border p-6"
             style={{ borderColor: "var(--border-subtle)", background: "var(--surface-1)" }}
           >
-            <Input label="Your name" placeholder="Jane Doe" required />
-            <Input label="Email" type="email" placeholder="you@company.com" required />
-            <Input label="Phone number" type="tel" placeholder="(000) 000-0000" required />
-            <Input label="Company name" placeholder="Company / organization" />
-            <Input label="Event location" placeholder="City, venue" />
-            <Input label="Event date" placeholder="Month / year" />
+            <Input name="name" label="Your name" placeholder="Jane Doe" required />
+            <Input name="email" label="Email" type="email" placeholder="you@company.com" required />
+            <Input name="phone" label="Phone number" type="tel" placeholder="(000) 000-0000" required />
+            <Input name="company" label="Company name" placeholder="Company / organization" />
+            <Input name="location" label="Event location" placeholder="City, venue" />
+            <Input name="event_date" label="Event date" placeholder="Month / year" />
             <div className="col-span-full">
               <Input
                 as="textarea"
+                name="message"
                 label="Tell us about your event"
                 placeholder="Audience size, theme, goals, and which keynote interests you…"
                 hint="The more detail, the better the fit."
               />
             </div>
+            {status === "error" && (
+              <div className="col-span-full text-sm" style={{ color: "var(--color-spark)" }}>
+                Something went wrong sending your request. Please try again, or email tmoffitt@theartofvision.com directly.
+              </div>
+            )}
             <div className="col-span-full">
-              <Button variant="spark" size="lg" full type="submit">Book Erik</Button>
+              <Button variant="spark" size="lg" full type="submit" disabled={status === "submitting"}>
+                {status === "submitting" ? "Sending…" : "Book Erik"}
+              </Button>
             </div>
           </form>
         )}
