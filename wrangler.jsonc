@@ -1,0 +1,12 @@
+{
+  "name": "wahl-art-of-vision",
+  "compatibility_date": "2026-07-17",
+  "assets": {
+    "directory": "./out",
+    // We generate a real 404.html (see src/app/not-found.tsx) rather than an SPA,
+    // and next.config.ts sets trailingSlash: true so routes are directories with
+    // their own index.html -- these two settings match that exactly.
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  }
+}
